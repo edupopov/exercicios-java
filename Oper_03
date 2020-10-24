@@ -1,0 +1,39 @@
+import java.util.Locale;
+
+// Script de treino - Eduardo Popovici
+
+/* %s para texto
+ * %d para números inteiros
+ * %f para ponto flutuante
+ * %n para quebra de linha  
+ * */
+
+public class Oper_3 {
+	public static void main(String[] args) {
+		
+		String PRD1 = "Computer";
+		String PRD2 = "Office Desk";
+
+		int age = 30;
+		int code = 5290;
+		char gender = 'F';
+
+		double PRC1 = 2100.0;
+		double PRC2 = 650.50;
+		double measure = 53.234567;
+
+		System.out.println("Products: ");
+		System.out.printf("%s, which price is U$ %.2f %n ", PRD1, PRC1);
+		System.out.printf("%s, which price is %.2f %n", PRD2, PRC2);
+		System.out.println("  ");
+		System.out.printf("Record: %d years old, code %d and gender: %s %n", age, code, gender);
+		System.out.println("  ");
+		System.out.printf("Measue with eight decimal place: %.8f %n", measure);
+		System.out.printf("Rouded three decimal places: %.3f %n", measure);
+
+		Locale.setDefault(Locale.US);
+		System.out.printf("US decimal point: %.3f %n", measure);
+
+		}
+
+}
