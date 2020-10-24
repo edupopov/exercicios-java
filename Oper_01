@@ -1,0 +1,51 @@
+import java.util.Locale;
+
+// Script de treino - Eduardo Popovici
+
+/* Tipos primitivos (variáveis JAVA)
+ * 
+ * byte = 8 bits = valores -128 a 127 = padrão 0
+ * short 16 bits = valores -32768 a 32767 = padrão 0
+ * int 32 bits = valores -2147483648 a 2147483647 = padrão 0
+ * long 64 bits = valores -9223372036854770000 a 9223372036854770000 = padrão 0L
+ * float 32 bits com ponto flutuante = -1,4024E-37 a 3,4028E+38 = padrão 0.0f
+ * double 64 bits com ponto flutuante = -4,94E-307 a 1,79E+308 = padrão 0.0
+ * char 16 bits unicode = '\u0000' a '\uFFFF' = padrão '\u0000' (chama o caractere pelo número de chamada unicode)
+ * boolean 1 bit valor verdade = {false,true} = padrão false
+ * 
+ *  Lembrando que String é um conjunto de caracteres (palavras e textos)
+ *  8 bits equivalem a 256 possibilidades (2^8 - dois elevado a oitava potência)
+ *  
+ *  Importante - você não pode começar uma variável com dígito: use uma letra ou _
+ *  Não pode haver espaços em branco ou acentuação nas variáveis
+ *  É recomendado a utilização do padrão Camel Case (SigaEstePadrao) 
+ *  
+ */
+public class Oper_01 {
+
+	public static void main(String[] args) {
+		
+		short idade = 41;
+		double altura_X = 1.7333;
+		char sexo = 'M';
+		
+		System.out.println("Me chamo Eduardo e tenho a idade de "+idade+" e altura de ");
+		// System.out.print("Minha altura é ");
+		
+		// printf faz a formatação e "%.2f% adiciona duas casas decimais
+		// o paramentro n faz pular para a próxima linha - "%.2fn%n"
+		// Quando coloquei a veriável com o nome de altura, apresenteou erro
+		System.out.printf("%.2f%n", altura_X);	
+		
+		// Mesmo exemplo mas com 04 casas decimais
+		// A formatação pega o separador de decimais pelo idioma do notebook
+		System.out.printf("%.4f%n", altura_X);
+		
+		// Para ignorar o idioma do computador e forçar uma localidade, use o Locale
+		// Locale precisa ser importado - Locale é um classe que precisa ser importada 
+		Locale.setDefault(Locale.US);
+		
+		// Esta impressão segue sem formatação com a quantidade de casas decimais aberta
+		System.out.println(altura_X);
+		}
+}
