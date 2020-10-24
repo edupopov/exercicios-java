@@ -1,0 +1,30 @@
+
+public class Oper_6 {
+
+	public static void main(String[] args) {
+
+		int a,b;
+		double resultado1;
+		double resultado2;
+		
+		a = 5;
+		b = 2;
+		
+		/* Mesmo com as variáveis a,b sendo int, é possível direcionar a saída com o double
+		 * Aqui deixo dois exemplos onde um não possui a saída double e a outra sim
+		 * É preciso tomar cuidado neste ponto para evitar problemas
+		 * O nome desta técnica é chamada Casting
+		 */
+		
+		resultado1 = a/b;
+		resultado2 = (double) a/b;
+		
+		System.out.println("Sem usar o Double o resultado é: "+resultado1);
+		System.out.println("Usando o Double o resultado é: "+resultado2);
+		System.out.println("  ");
+		System.out.println("Note que o resultado é diferente.");
+		System.out.println("Quando não usamos o double na saída da variável, é descartado o valor flutuante.");
+
+	}
+
+}
