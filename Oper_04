@@ -1,0 +1,17 @@
+// Script de treino - Eduardo Popovici
+// Teste de processamento - multiplicação
+
+public class Oper_4 {
+	public static void main(String[] args) {
+		
+		double X,Y,Z;
+		
+		X = 5;
+		Y = 2;
+		Z = X * Y;
+		
+		System.out.printf("0%.2f %n", X);
+		System.out.printf("0%.2f %n", Y);
+		System.out.printf("%.2f %n", Z);
+	}
+}
