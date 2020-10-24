@@ -1,0 +1,31 @@
+/* Calculando a área de um trapézio
+ * A área de um trapézio é calculada sendo ((b+B)/2)*h
+ * b = base menor
+ * B = base maior
+ * h = Altura
+ * D = valor da divisão
+ */
+
+public class Oper_5 {
+
+	public static void main(String[] args) {
+		
+		/* Você também pode usar float em vez de double - float b,B,h,D,area
+		 * Em vez de declarar b = 6.0; você pode usar o formato b = 6f; por exemplo
+		 * você também pode usar double na frente da expressão quando a variável for do tipo int
+		 */
+		
+		double b,B,h,D,area;
+		
+		b = 6.0;
+		B = 8.0;
+		h = 5.0;
+		D = 2.0;
+		area = ((b+B)/D) * h;
+		
+		System.out.printf("Considerando um trapézio de base menor %.2f, com base maior %.2f e altura %.2f %n", b, B, h);
+		System.out.printf("podemos dizer que a área equivale a %.2f %n", area);
+		
+	}
+
+}
