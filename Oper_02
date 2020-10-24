@@ -1,0 +1,24 @@
+//Script de treino - Eduardo Popovici
+
+public class Oper_2 {
+
+	public static void main(String[] args) {
+		String nome = "Eduardo Popovici";
+		String profissao = "Programador";
+		short idade = 41;
+		double altura_X = 1.7333;
+		char sexo = 'M';
+		
+		// Use a mesma sequencia de variávei para a declaração dos %
+		// Valores interpolados dentro de uma mesma linha - dentro de um mesmo comando de escrita
+		System.out.printf("%s tem %d anos e mede %.2f metros, trabalha como %s e gosta muito de Star Wars%n", nome, idade, altura_X, profissao);
+		
+		/* %s para texto
+		 * %d para números inteiros
+		 * %f para ponto flutuante
+		 * %n para quebra de linha  
+		 * */		
+
+	}
+
+}
