@@ -1,0 +1,19 @@
+/* Estrutura condicional - expressões comparativas revisão
+ * > maior
+ * < menor
+ * >= maior ou igual
+ * <=menor ou igual
+ * == igual
+ * != diferente 
+ * && e
+ * || ou
+ * ! não
+ * */
+public class Oper_13 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
