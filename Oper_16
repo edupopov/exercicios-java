@@ -1,0 +1,34 @@
+/* Estrutura condicional composta - utiliza o else
+* V: Executa somente o bloco do if
+* F: Executa somente o bloco do else
+* Neste exemplo utilize hora cheia pois estamos usando a variável int
+* Lembre-se que Else não possue condição
+*/
+
+import java.util.Scanner;
+
+public class Oper_16 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		int hora;
+		System.out.println("Quantas horas?");
+		hora = sc.nextInt();
+
+		if (hora < 12) {
+		System.out.println("Bom dia");
+		}
+		else {
+			if (hora < 18) { 
+			System.out.println("Boa tarde");
+			}
+			else {
+			System.out.println("Boa noite");
+			}
+		}
+		sc.close();
+
+	}
+}
