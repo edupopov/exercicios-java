@@ -1,0 +1,20 @@
+/* Este exercício é para uma estrutura condicional simples */
+public class Oper_14 {
+
+	public static void main(String[] args) {
+		
+		int x = 5;
+		
+		if (x >= 5) {
+		System.out.println("Bom dia");
+		}
+		
+		/* Todo o bloco de comandos dentro das chaves será executado enquanto verdade */
+		if (x < 0) {
+		System.out.println("Boa tarde");
+		}
+		
+		System.out.println("Boa noite");
+
+	}
+}
