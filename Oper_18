@@ -1,0 +1,33 @@
+/* Este execício identifica a nota digitada e retorna o status do aluno
+ * A ideia aqui é praticar a concatenação if, else if, else
+ */
+
+import java.util.Scanner; 
+public class Oper_18 {
+
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+
+	double notaEscola;
+	System.out.println("Qual foi a nota do aluno?");
+	notaEscola = sc.nextDouble();
+
+	if (notaEscola < 0) {
+	System.out.println("Nota Inválida");
+	} 
+	else if (notaEscola < 5) {
+	System.out.println("Reprovado");
+	}
+	else if (notaEscola < 7) {
+	System.out.println("Recuperação");
+	}
+	else if (notaEscola > 10) {
+	System.out.println("Nota Inválida");
+	}
+	else {
+	System.out.println("Aprovado");
+	}
+
+	sc.close();
+	}
+}
