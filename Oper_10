@@ -1,0 +1,23 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Oper_10 {
+
+	public static void main(String[] args) {
+		// O Locale permite definir o local da formatação US, BR, etc
+		// Quando for digitar a saída, use a virgula em vez do ponto
+		Locale.setDefault(Locale.US);
+		// A próxima linha associa o Scanner ao modo console
+		Scanner sc = new Scanner(System.in);
+		
+		char x;
+		x = sc.next().charAt(0);	
+		// Usando a char vamos trabalhar com o primeiro caractere
+		sc.close();
+		/* Preciso sempre fechar a associação após o uso
+		Se você digital sysout e pressionar CTRL + Space o Eclipse preenche automatiamente */
+		System.out.println("Você digitou: "+x);
+		// O programa ficará parado até que você digite algo na tela
+	}
+
+}
