@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Oper_8 {
+
+	public static void main(String[] args) {
+		
+		// A próxima linha associa o Scanner ao modo console
+		Scanner sc = new Scanner(System.in);
+		
+		int x;
+		x = sc.nextInt();	
+		// Usando a nextInt vamos trabalhar com números inteiros
+		sc.close();
+		/* Preciso sempre fechar a associação após o uso
+		Se você digital sysout e pressionar CTRL + Space o Eclipse preenche automatiamente */
+		System.out.println("Você digitou "+x);
+		// O programa ficará parado até que você digite algo na tela
+	}
+
+}
