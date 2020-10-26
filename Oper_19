@@ -1,0 +1,33 @@
+/* Aqui vamos usar o exemplo do exercício anterior, porém
+ * com a saída baseada no printf e não println
+ */
+
+import java.util.Scanner; 
+public class Oper_19 {
+
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+
+	double notaEscola;
+	System.out.println("Qual foi a nota do aluno?");
+	notaEscola = sc.nextDouble();
+
+	if (notaEscola < 0) {
+	System.out.printf("A nota %.2f digitada não é válida %n",notaEscola);
+	} 
+	else if (notaEscola < 5) {
+	System.out.printf("Sua nota %.2f não foi suficiente e você esta reprovado %n",notaEscola);
+	}
+	else if (notaEscola < 7) {
+	System.out.printf("Sua nota %.2f não foi suficiente mas permitiu te levar até a recuperação %n",notaEscola);
+	}
+	else if (notaEscola > 10) {
+	System.out.printf("A nota %.2f digitada não é válida %n",notaEscola);
+	}
+	else {
+	System.out.printf("Parabéns! Sua nota %.2f atendeu os requisitos e você pode avançar",notaEscola);
+	}
+
+	sc.close();
+	}
+}
